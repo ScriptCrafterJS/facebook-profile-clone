@@ -1,0 +1,16 @@
+@use "../util" as *;
+
+.profile-info_container {
+  max-width: 56rem;
+  background-color: lightblue;
+  margin-inline: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(large) {
+    flex-direction: row;
+    gap: 1rem;
+    background-color: lightgreen;
+  }
+}

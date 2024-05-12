@@ -2,19 +2,13 @@ $breakpoints: (
   //means from 0 until 449px will be the small screens
   "small": 0,
   //means from 450px until 899px will be the medium screens
-  "md": 450px,
+  "medium": 450px,
   //from 900px and above large screens
-  "lg": 900px
+  "large": 900px
 );
 
 @mixin breakpoint($screenSize) {
   @media (min-width: map-get($breakpoints,$screenSize)) {
     @content;
-  }
-}
-
-h1 {
-  @include breakpoint(small) {
-    font-size: 1.2rem;
   }
 }
