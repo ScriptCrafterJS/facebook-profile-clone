@@ -36,7 +36,7 @@ function reloadBrowser(cb) {
 
 function watchTask() {
   watch("*.html", reloadBrowser);
-  watch("scss/*.scss", series(compileToCSS, reloadBrowser));
+  watch("scss/**/*.scss", series(compileToCSS, reloadBrowser));
 }
 
 exports.default = series(compileToCSS, startServer, watchTask);
