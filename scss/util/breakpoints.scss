@@ -12,3 +12,9 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin customBreakpoint($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
