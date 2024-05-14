@@ -1,0 +1,129 @@
+@use "../globals/typography.scss" as *;
+@use "../util" as *;
+.header {
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-primary-gray);
+  .header__navbar {
+    display: flex;
+    justify-content: space-between;
+    div {
+      display: flex;
+      align-items: center;
+      position: relative;
+      .header__search {
+        input {
+          padding: 0.7rem;
+          border: none;
+          border-radius: 99px;
+          background-color: var(--clr-comment-background);
+          padding-left: 2.5rem;
+          margin-left: 0.5rem;
+          display: none;
+          @include customBreakpoint(1200px) {
+            display: block;
+          }
+        }
+        svg {
+          background-color: var(--clr-comment-background);
+          border-radius: 99px;
+          box-sizing: content-box;
+          color: var(--clr-secondary-icon);
+          display: block;
+          left: 0;
+          margin-left: 0.5rem;
+          padding: 0.775rem;
+          position: relative;
+          top: 50%;
+          width: 1rem;
+          @include customBreakpoint(1200px) {
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        color: var(--clr-secondary-icon);
+        &::marker {
+          content: "";
+        }
+      }
+      img {
+        width: $icon-width-xl;
+        border-radius: 99px;
+      }
+    }
+    .header__menu {
+      flex-basis: 30rem;
+      .menu__social-link {
+        display: flex;
+        justify-content: center;
+        flex-basis: 7rem;
+        color: var(--clr-secondary-icon);
+        border-radius: 7px;
+        cursor: pointer;
+        &:hover {
+          background-color: var(--clr-comment-background);
+        }
+        svg {
+          width: $icon-width-large;
+        }
+      }
+      display: none;
+      @include customBreakpoint(700px) {
+        display: flex;
+      }
+    }
+    .header__personal-menu {
+      gap: 0.5rem;
+      .personal-menu__link {
+        color: var(--clr-primary-icon);
+        height: $icon-width-medium;
+        width: $icon-width-medium;
+        border-radius: 99px;
+        box-sizing: content-box;
+        background-color: var(--clr-secondary-btn-bg);
+        cursor: pointer;
+        padding: 0.7rem;
+        &:last-child {
+          width: 2.5rem;
+          height: 2.5rem;
+          padding: 0;
+          position: relative;
+          &::before {
+            position: absolute;
+            content: url(../../images/navbar/dropdown-account.svg);
+            width: 1rem;
+            height: 1rem;
+            background-color: var(--clr-secondary-comment-background);
+            bottom: -5px;
+            right: -5px;
+            border-radius: 99px;
+            border: solid 3px var(--clr-primary-gray);
+          }
+        }
+        &:hover {
+          background-color: var(--clr-secondary-comment-background);
+        }
+        svg {
+          width: $icon-width-medium;
+        }
+        &:first-child svg:last-child {
+          display: block;
+          @include customBreakpoint(1100px) {
+            display: none;
+          }
+        }
+        &:first-child svg:first-child {
+          display: none;
+          @include customBreakpoint(1100px) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
