@@ -13,6 +13,12 @@ $breakpoints: (
   }
 }
 
+@mixin breakpoint-down($screenSize) {
+  @media (max-width: map-get($breakpoints,$screenSize)) {
+    @content;
+  }
+}
+
 @mixin customBreakpoint($size) {
   @media (min-width: $size) {
     @content;
