@@ -1,11 +1,10 @@
 @use "../util" as *;
 .banner {
-  background-image: linear-gradient(#fdf0ce, var(--clr-primary-gray));
   .banner__coverphoto {
+    background-image: linear-gradient(#fdf0ce, var(--clr-primary-gray));
     .image-container {
       max-width: 60rem;
       margin-inline: auto;
-      background-color: red;
       min-height: 23rem;
       overflow: hidden;
       position: relative;
@@ -37,12 +36,12 @@
     }
   }
   .banner__edit {
+    background-color: var(--clr-primary-gray);
     .global-container {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      max-width: 100%;
       @include breakpoint(large) {
         flex-direction: row;
       }
@@ -117,9 +116,11 @@
       display: flex;
       align-items: center;
       color: white;
+      margin-top: 3.5rem;
       @include breakpoint-down(large) {
         position: relative;
         top: -5rem;
+        margin-top: 0;
       }
       div {
         display: flex;
@@ -144,6 +145,55 @@
         padding: 13.6px 17px;
         font-size: 0.7rem;
         cursor: pointer;
+      }
+    }
+  }
+  .banner__profile-links {
+    background-color: var(--clr-primary-gray);
+    @include breakpoint-down(large) {
+      position: relative;
+      top: -4rem;
+      padding-inline: 1rem;
+    }
+    .global-container {
+      display: flex;
+      justify-content: space-between;
+      border-top: solid 2px gray;
+      padding: 2px 0;
+      align-items: center;
+      > i {
+        background-color: var(--clr-comment-background);
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.7rem;
+        padding: 13.6px 20px;
+        color: white;
+      }
+    }
+    .links {
+      display: flex;
+      .profile-link {
+        a {
+          color: var(--clr-secondary-text);
+          text-decoration: none;
+          display: block;
+          padding: 1rem;
+          &:hover {
+            background-color: var(--clr-comment-background);
+          }
+        }
+        &::marker {
+          content: "";
+        }
+        .active {
+          color: var(--clr-secondary-blue);
+          border-bottom: solid 2px var(--clr-secondary-blue);
+        }
+        :last-child {
+          i {
+            margin-left: 0.5rem;
+          }
+        }
       }
     }
   }
