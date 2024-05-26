@@ -1,0 +1,29 @@
+.profile-media {
+  background-color: var(--clr-primary-gray-dark);
+  .global-container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    .left {
+      .intro {
+        .intro__bio {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          .intro-btn {
+            margin: 0.7rem 0;
+          }
+        }
+        .intro__details .details li {
+          &::marker {
+            content: "";
+          }
+        }
+      }
+      max-width: 43%;
+    }
+    .right {
+      max-width: 57%;
+    }
+  }
+}

@@ -19,3 +19,27 @@
   margin-inline: auto;
   max-width: 100%;
 }
+
+.card {
+  background-color: var(--clr-primary-gray);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: white;
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.profile-media__button {
+  background-color: var(--clr-comment-background);
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  &:hover {
+    background-color: var(--clr-secondary-comment-background);
+  }
+}
