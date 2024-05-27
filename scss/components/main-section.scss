@@ -5,6 +5,17 @@
     gap: 1rem;
     padding: 1rem 0;
     .left {
+      > p,
+      > p a {
+        color: var(--clr-secondary-text);
+        font-size: 0.8rem;
+      }
+      > p a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
       .intro {
         .intro__sec {
           display: flex;

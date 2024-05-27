@@ -30,6 +30,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    > h2 + a {
+      color: var(--clr-blue-link);
+    }
+  }
+  a {
+    text-decoration: none;
   }
 }
 .profile-media__button {
@@ -37,6 +43,7 @@
   border: none;
   padding: 0.7rem;
   border-radius: 0.5rem;
+  margin-top: 0.7rem;
   cursor: pointer;
   color: white;
   &:hover {
