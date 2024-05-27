@@ -24,3 +24,8 @@ $breakpoints: (
     @content;
   }
 }
+@mixin customBreakpoint-down($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
