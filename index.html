@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Facebook Profile Clone</title>
     <!-- styles -->
     <link rel="stylesheet" href="./dist/style.css" />
     <!-- font awesome icons -->
@@ -245,7 +245,9 @@
         <div class="banner__profile-links">
           <div class="global-container">
             <ul class="links">
-              <li class="profile-link"><a class="active" href="#">Posts</a></li>
+              <li class="profile-link">
+                <a class="active-link" href="#">Posts</a>
+              </li>
               <li class="profile-link"><a href="#">About</a></li>
               <li class="profile-link"><a href="#">Friends</a></li>
               <li class="profile-link"><a href="#">Photos</a></li>
@@ -326,7 +328,7 @@
             </article>
             <article class="friends card">
               <div>
-                <h2 class="friends__title">Photos</h2>
+                <h2 class="friends__title">Friends</h2>
                 <a href="">See all photos</a>
               </div>
               <p class="friends__count">495 friends</p>
@@ -354,36 +356,41 @@
                 />
               </div>
               <div>
-                <span
-                  ><img
+                <p>
+                  <img
                     src="images/create-post/live-video.png"
                     alt="live video"
-                  />Live video</span
-                >
-                <span
-                  ><img
+                  /><span>Live video</span>
+                </p>
+                <p>
+                  <img
                     src="images/create-post/photos-videos.png"
                     alt="picture"
-                  />Photo/video</span
-                >
-                <span
-                  ><img
-                    src="images/create-post/flag.png"
-                    alt="live video"
-                  />Life event</span
-                >
+                  />
+                  <span>Photo/video</span>
+                </p>
+                <p>
+                  <img src="images/create-post/flag.png" alt="live video" />
+                  <span>Life event</span>
+                </p>
               </div>
             </article>
             <article class="posts-management card">
               <div>
                 <h2 class="posts-management__title">Posts</h2>
                 <div class="posts-management__buttons">
-                  <a href="#"><i class="fa-solid fa-sliders"></i>Filter</a>
-                  <a href="#"><i class="fa-solid fa-gear"></i>Manage posts</a>
+                  <a href="#" class="profile-media__button"
+                    ><i class="fa-solid fa-sliders"></i>Filter</a
+                  >
+                  <a href="#" class="profile-media__button"
+                    ><i class="fa-solid fa-gear"></i>Manage posts</a
+                  >
                 </div>
               </div>
               <div>
-                <a href="#"><i class="fa-solid fa-bars"></i>List view</a>
+                <a href="#" class="active-link"
+                  ><i class="fa-solid fa-bars"></i>List view</a
+                >
                 <a href="#"><i class="fa-solid fa-grip"></i>Grid view</a>
               </div>
             </article>

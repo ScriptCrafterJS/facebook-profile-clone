@@ -1,5 +1,5 @@
 @use "../util" as *;
-
+@use "../globals/typography.scss" as *;
 .profile-info_container {
   max-width: 56rem;
   background-color: lightblue;
@@ -22,14 +22,14 @@
 
 .card {
   background-color: var(--clr-primary-gray);
-  border-radius: 0.5rem;
+  border-radius: $base-border-radius;
   margin-bottom: 1rem;
   padding: 1rem;
   color: white;
   > div {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     > h2 + a {
       color: var(--clr-blue-link);
     }
@@ -42,11 +42,31 @@
   background-color: var(--clr-comment-background);
   border: none;
   padding: 0.7rem;
-  border-radius: 0.5rem;
+  border-radius: $base-border-radius;
   margin-top: 0.7rem;
   cursor: pointer;
-  color: white;
+  color: var(--clr-secondary-btn-text);
   &:hover {
     background-color: var(--clr-secondary-comment-background);
+  }
+  i {
+    margin-right: 0.4rem;
+  }
+}
+.active-link {
+  color: var(--clr-secondary-blue);
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -0.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--clr-secondary-blue);
+  }
+  &:hover {
+    background-color: none;
   }
 }

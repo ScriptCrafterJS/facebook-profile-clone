@@ -1,3 +1,4 @@
+@use "../globals/typography.scss" as *;
 .profile-media {
   background-color: var(--clr-primary-gray-dark);
   .global-container {
@@ -32,7 +33,7 @@
             }
             img {
               filter: invert(89%) sepia(6%) hue-rotate(185deg);
-              margin-right: 0.5rem;
+              margin-right: $base-inner-spacing;
             }
             a {
               color: white;
@@ -51,6 +52,83 @@
     }
     .right {
       width: 57%;
+      .whats-in-your-mind {
+        div:first-child {
+          border-bottom: solid 1px var(--clr-secondary-btn-bg);
+          padding-bottom: 0.7rem;
+          img {
+            border-radius: $circular-border-radius;
+          }
+          input {
+            width: 100%;
+            border: none;
+            border-radius: $input-border-radius;
+            background-color: var(--clr-comment-background);
+            outline: none;
+            padding: 10px;
+            margin-left: $base-inner-spacing;
+            font-size: 1.1rem;
+            cursor: pointer;
+            &:hover {
+              background-color: var(--clr-secondary-comment-background);
+            }
+          }
+        }
+        div:last-child {
+          justify-content: center;
+          margin-top: $base-inner-spacing;
+          p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 9rem;
+            gap: $base-inner-spacing;
+            padding: $base-inner-spacing 0;
+            border-radius: $base-border-radius;
+            cursor: pointer;
+            &:hover {
+              background-color: var(--clr-comment-background);
+            }
+            span {
+              font-size: 0.9rem;
+              color: var(--clr-secondary-text);
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .posts-management {
+        padding-inline: 0;
+        padding-bottom: 0;
+        .posts-management__buttons {
+          margin-top: 0.2rem;
+          a:first-child {
+            margin-right: 0.2rem;
+          }
+        }
+        > div:first-child {
+          padding-inline: 1rem;
+        }
+        > div:last-child {
+          justify-content: center;
+          margin-top: 0.8rem;
+          border-top: solid 1px var(--clr-secondary-btn-bg);
+          text-align: center;
+          padding: 0.2rem 0;
+          a {
+            flex-basis: 14rem;
+            padding: $base-inner-spacing 0;
+            border-radius: $base-border-radius;
+            color: var(--clr-secondary-text);
+            &:hover {
+              background-color: var(--clr-comment-background);
+            }
+            i {
+              margin-right: $base-inner-spacing;
+            }
+          }
+        }
+      }
     }
   }
 }
