@@ -1,10 +1,15 @@
 @use "../globals/typography.scss" as *;
+@use "../util/" as *;
 .profile-media {
   background-color: var(--clr-primary-gray-dark);
   .global-container {
     display: flex;
     gap: 1rem;
     padding: 1rem 0;
+    @include breakpoint-down(large) {
+      flex-direction: column;
+      padding: 1rem;
+    }
     .left {
       > p,
       > p a {
@@ -49,6 +54,13 @@
         }
       }
       width: 43%;
+      @include breakpoint-down(large) {
+        width: 100%;
+        max-width: 40rem;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     .right {
       width: 57%;
@@ -82,7 +94,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-basis: 9rem;
+            flex-basis: 31%;
             gap: $base-inner-spacing;
             padding: $base-inner-spacing 0;
             border-radius: $base-border-radius;
@@ -117,7 +129,7 @@
           text-align: center;
           padding: 0.2rem 0;
           a {
-            flex-basis: 14rem;
+            flex-basis: 47%;
             padding: $base-inner-spacing 0;
             border-radius: $base-border-radius;
             color: var(--clr-secondary-text);
@@ -129,6 +141,13 @@
             }
           }
         }
+      }
+      @include breakpoint-down(large) {
+        width: 100%;
+        max-width: 40rem;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }

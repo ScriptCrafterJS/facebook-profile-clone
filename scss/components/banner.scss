@@ -54,12 +54,12 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        top: -5rem;
+        top: -1rem;
         gap: 0;
       }
       .banner__personal-img {
-        width: 10rem;
-        height: 10rem;
+        width: 11rem;
+        height: 11rem;
         position: relative;
         bottom: 1.5rem;
         cursor: pointer;
@@ -80,6 +80,16 @@
         }
         &:hover::before {
           background-color: rgba(255, 255, 255, 0.096);
+        }
+        i {
+          bottom: 0.5rem;
+          color: var(--clr-primary-icon);
+          position: absolute;
+          right: 0.5rem;
+          font-size: 1.3rem;
+          background-color: var(--clr-secondary-comment-background);
+          padding: 0.5rem;
+          border-radius: $circular-border-radius;
         }
       }
       .banner__info {
@@ -120,7 +130,7 @@
       margin-top: 3.5rem;
       @include breakpoint-down(large) {
         position: relative;
-        top: -5rem;
+        top: -1rem;
         margin-top: 0;
       }
       div {
@@ -153,7 +163,7 @@
     background-color: var(--clr-primary-gray);
     @include breakpoint-down(large) {
       position: relative;
-      top: -4rem;
+      // top: -4rem;
       padding-inline: 1rem;
     }
     .global-container {
@@ -179,6 +189,7 @@
           text-decoration: none;
           display: block;
           padding: 1rem;
+          border-radius: $base-border-radius;
           &:hover {
             background-color: var(--clr-comment-background);
           }

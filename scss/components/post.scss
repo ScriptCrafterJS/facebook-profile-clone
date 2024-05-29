@@ -85,7 +85,7 @@
     border-bottom: solid 1px var(--clr-comment-background);
     .post__interact-btn {
       color: var(--clr-secondary-text);
-      flex-basis: 14rem;
+      flex-basis: 50%;
       padding: 0.5rem 0;
       border-radius: $base-border-radius;
       &:hover {
