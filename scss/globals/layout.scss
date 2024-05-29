@@ -56,6 +56,9 @@
 .active-link {
   color: var(--clr-secondary-blue);
   position: relative;
+  &:hover {
+    background-color: none;
+  }
   &::before {
     position: absolute;
     content: "";
@@ -65,8 +68,5 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--clr-secondary-blue);
-  }
-  &:hover {
-    background-color: none;
   }
 }

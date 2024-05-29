@@ -3,6 +3,9 @@
 .header {
   padding: $base-inner-spacing 1rem;
   background-color: var(--clr-primary-gray);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   .header__navbar {
     display: flex;
     justify-content: space-between;
