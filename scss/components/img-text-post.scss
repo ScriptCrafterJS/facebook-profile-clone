@@ -1,0 +1,17 @@
+.img-text-post {
+  p {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.3333;
+    color: var(--clr-primary-text);
+    margin: 0.7rem 0;
+  }
+  a {
+    display: flex;
+    img {
+      width: calc(100% + 2rem);
+      position: relative;
+      left: -1rem;
+    }
+  }
+}
