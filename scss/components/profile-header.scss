@@ -96,16 +96,15 @@
           height: 2.5rem;
           padding: 0;
           position: relative;
-          &::before {
+          i {
+            background-color: var(--clr-comment-background);
+            font-size: 0.6rem;
             position: absolute;
-            content: url(../../images/header/dropdown-account.svg);
-            width: 1rem;
-            height: 1rem;
-            background-color: var(--clr-secondary-comment-background);
-            bottom: -5px;
-            right: -5px;
+            padding: 0.07rem;
+            border: solid 2px var(--clr-primary-gray);
             border-radius: $circular-border-radius;
-            border: solid 3px var(--clr-primary-gray);
+            bottom: -0.2rem;
+            right: 0;
           }
         }
         &:hover {
