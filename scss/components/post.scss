@@ -1,98 +1,104 @@
 @use "../globals/typography.scss" as *;
-.post__header {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  .post__owner-info {
+.post {
+  .post__header {
     display: flex;
-    align-items: center;
-    > img {
-      border-radius: $circular-border-radius;
-      margin-right: $base-inner-spacing;
-    }
-    .post_posted-time {
-      font-size: 0.8rem;
-      color: var(--clr-secondary-text);
-      img {
-        filter: var(--filter-secondary-icon);
-      }
-    }
-  }
-  .post__config {
-    i {
-      cursor: pointer;
-      padding: 0.6rem;
-      font-size: 1.1rem;
-      color: var(--clr-secondary-icon);
-      &:hover {
-        background-color: var(--clr-comment-background);
-        border-radius: $circular-border-radius;
-      }
-    }
-  }
-}
-.post__interact {
-  padding-top: 0.3rem;
-  .post__commenting {
-    display: flex;
-    align-items: center;
-    position: relative;
-    .interactions {
+    align-items: start;
+    justify-content: space-between;
+    .post__owner-info {
       display: flex;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      li {
-        display: flex;
+      align-items: center;
+      > img {
         border-radius: $circular-border-radius;
-        padding: 0.45rem;
-        cursor: pointer;
-        &:hover {
-          background-color: var(--clr-secondary-comment-background);
-        }
-        &::marker {
-          content: "";
-        }
+        margin-right: $base-inner-spacing;
+      }
+      .post_posted-time {
+        font-size: 0.8rem;
+        color: var(--clr-secondary-text);
         img {
           filter: var(--filter-secondary-icon);
         }
-        i {
-          color: var(--clr-secondary-icon);
+      }
+    }
+    .post__config {
+      i {
+        cursor: pointer;
+        padding: 0.6rem;
+        font-size: 1.1rem;
+        color: var(--clr-secondary-icon);
+        &:hover {
+          background-color: var(--clr-comment-background);
+          border-radius: $circular-border-radius;
         }
       }
     }
-    > img {
-      border-radius: $circular-border-radius;
-      margin-right: 0.4rem;
-    }
-    input {
-      outline: none;
-      border: none;
-      width: 100%;
-      border-radius: $input-border-radius;
-      padding: 0.5rem;
-      background-color: var(--clr-comment-background);
-      caret-color: white;
-    }
   }
-  .post__interact-buttons {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 1rem;
-    padding-bottom: 0.3rem;
-    border-bottom: solid 1px var(--clr-comment-background);
-    .post__interact-btn {
-      color: var(--clr-secondary-text);
-      flex-basis: 50%;
-      padding: 0.5rem 0;
-      border-radius: $base-border-radius;
-      &:hover {
-        background-color: var(--clr-comment-background);
+  .post__content {
+    display: block;
+  }
+  .post__interact {
+    padding-top: 0.3rem;
+    display: block;
+    .post__commenting {
+      display: flex;
+      align-items: center;
+      position: relative;
+      .interactions {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        li {
+          display: flex;
+          border-radius: $circular-border-radius;
+          padding: 0.45rem;
+          cursor: pointer;
+          &:hover {
+            background-color: var(--clr-secondary-comment-background);
+          }
+          &::marker {
+            content: "";
+          }
+          img {
+            filter: var(--filter-secondary-icon);
+          }
+          i {
+            color: var(--clr-secondary-icon);
+          }
+        }
       }
-      i {
-        margin-right: $base-inner-spacing;
+      > img {
+        border-radius: $circular-border-radius;
+        margin-right: 0.4rem;
+      }
+      input {
+        outline: none;
+        border: none;
+        width: 100%;
+        border-radius: $input-border-radius;
+        padding: 0.5rem;
+        background-color: var(--clr-comment-background);
+        caret-color: white;
+      }
+    }
+    .post__interact-buttons {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 1rem;
+      padding-bottom: 0.3rem;
+      border-bottom: solid 1px var(--clr-comment-background);
+      .post__interact-btn {
+        color: var(--clr-secondary-text);
+        flex-basis: 50%;
+        padding: 0.5rem 0;
+        border-radius: $base-border-radius;
+        &:hover {
+          background-color: var(--clr-comment-background);
+        }
+        i {
+          margin-right: $base-inner-spacing;
+        }
       }
     }
   }
