@@ -140,6 +140,11 @@
               margin-right: $base-inner-spacing;
             }
           }
+          a.active-link {
+            &:hover {
+              background-color: var(--clr-primary-gray);
+            }
+          }
         }
       }
       @include breakpoint-down(large) {

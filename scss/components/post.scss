@@ -47,6 +47,8 @@
         top: 50%;
         right: 0;
         transform: translateY(-50%);
+        background-color: var(--clr-comment-background);
+        border-radius: $input-border-radius;
         li {
           display: flex;
           border-radius: $circular-border-radius;
