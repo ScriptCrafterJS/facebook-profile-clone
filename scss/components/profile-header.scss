@@ -60,11 +60,19 @@
       }
     }
     .header__menu {
-      flex-basis: 30rem;
+      position: absolute;
+      width: 100%;
+      max-width: 53rem;
+      height: calc(100% - 0.5rem);
+      padding-inline: 12rem;
+      align-self: center;
+      left: 50%;
+      transform: translateX(-50%);
+      justify-content: center;
       .menu__social-link {
         display: flex;
         justify-content: center;
-        flex-basis: 7rem;
+        flex-basis: 20%;
         color: var(--clr-secondary-icon);
         border-radius: 7px;
         cursor: pointer;
@@ -105,6 +113,16 @@
             border-radius: $circular-border-radius;
             bottom: -0.2rem;
             right: 0;
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: $circular-border-radius;
+          }
+          &:hover::before {
+            background-color: rgba(255, 255, 255, 0.096);
           }
         }
         &:hover {
