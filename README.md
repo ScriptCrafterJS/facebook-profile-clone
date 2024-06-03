@@ -3,9 +3,6 @@
 
 This project is a web application that replicates the Facebook profile page, showcasing my skills in SCSS and Gulp. It features advanced SCSS techniques and Gulp automation for an efficient and scalable development workflow.
 
-## Screenshots
-![infinite scroll preview](https://github.com/MotasemNabeelAli/Endless-Scroll-Photo-Gallery/assets/97013908/8864fe7b-b02b-4fbb-ac9f-e6b31cd8bcbf)
-
 ## Features <img src="https://github.com/ScriptCrafterJS/Endless-Scroll-Photo-Gallery/assets/151676251/52b45c47-1ce4-4fb8-b9fc-93208a917ea7" width="40">
 - SCSS Partials: Organized code by separating styles into different files.
 - Mixins and Variables: Reusable styles and maintainable codebase.
