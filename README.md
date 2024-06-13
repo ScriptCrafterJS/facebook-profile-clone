@@ -14,7 +14,7 @@ This project is a web application that replicates the Facebook profile page, sho
 ## Installation <img src="https://github.com/ScriptCrafterJS/Endless-Scroll-Photo-Gallery/assets/151676251/fb31ebaa-898f-4a8f-8357-9aaf1747e2d4" width="40">
 1. Clone the repository:
 ```bash
-git clone https://github.com/MotasemNabeelAli/Endless-Scroll-Photo-Gallery.git
+git clone https://github.com/ScriptCrafterJS/facebook-profile-clone.git
 ```
 2. Install dependencies:
 ```bash
