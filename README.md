@@ -2,6 +2,7 @@
 
 This project is a web application that replicates the Facebook profile page, showcasing my skills in SCSS and Gulp. It features advanced SCSS techniques and Gulp automation for an efficient and scalable development workflow.
 ![image](https://github.com/ScriptCrafterJS/facebook-profile-clone/assets/151676251/49cc072b-6aac-42d9-bb0c-d1e9f66dd944)
+![image](https://github.com/ScriptCrafterJS/facebook-profile-clone/assets/151676251/dbbdd618-ef63-4bba-9c7b-8574a167e24a)
 
 ## Features <img src="https://github.com/ScriptCrafterJS/Endless-Scroll-Photo-Gallery/assets/151676251/52b45c47-1ce4-4fb8-b9fc-93208a917ea7" width="40">
 - SCSS Partials: Organized code by separating styles into different files.
