@@ -1,5 +1,4 @@
 # Facebook Profile Clone
-[Facebook Profile Clone](https://scriptcrafterjs.github.io/facebook-profile-clone/)
 
 This project is a web application that replicates the Facebook profile page, showcasing my skills in SCSS and Gulp. It features advanced SCSS techniques and Gulp automation for an efficient and scalable development workflow.
 
